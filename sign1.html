@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta name="google-signin-client_id" content="598783768267-aedr5j4k18iejk4ictfjjkrpl1813ils.apps.googleusercontent.com">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+.g-signin2
+{
+margin-left:550px;
+margin-top:10px;
+}
+.data
+{
+display:none;
+}
+body{
+background-image:url("s1.jpg");
+size:cover;
+}
+#heading{
+text-align:center;
+font-size:40px;
+font-family:Broadway;
+color:black;
+}
+td{
+padding:25px;
+width:30%;
+}
+th{
+padding:10px;
+width:70%;
+}
+</style>
+</head>
+<body>
+<div style="background-color:white; width:500px; height:450px; margin-left:450px; margin-top:80px;" class="create">
+<p id="heading">Create Account</p>
+<p><center>Please fill in this form to create an account</center></p>
+<form>
+<table>
+<tr>
+<td>Email-Address:</td>
+<th><input type="email" placeholder="email"></th>
+</tr>
+<tr>
+<td>Password:</td>
+<th><input type="password" placeholder="Enter Password"></th>
+</tr>
+<tr>
+<td>Confirm Password:</td>
+<th><input type="password" placeholder="Repeat Password"></th>
+</tr>
+</table>
+</form>
+<br>
+<center><p>By creating this account, you agree to our <a>Terms and Policy</a></p></center>
+<center><button style="height:40px; width:130px; background-color:black;"><a href="home.html" style="color:white;">Sign Up</a></button></center>
+</div>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<div class="data">
+<p>Profile Details</p>
+<img id="pic" class="img-circle" width="100px" height="100px">
+<p>email address</p>
+<p id="email" class="alert alert-danger"></p>
+<button onclick="signOut()" class="btn btn-danger">SignOut</button>
+</div>
+<script>
+function onSignIn(googleUser)
+{
+var profile=googleUser.getBasicProfile();
+$(".g-signin2").css("display","none");
+$(".data").css("display","block");
+$("#pic").attr('src',profile.getImageUrl());
+$("#email").text(profile.getEmail());
+}
+function signOut()
+{
+var auth2=gapi.auth2.getAuthInstance();
+auth2.signOut().then(function()
+{
+alert("you have been successfully signed out");
+$(".g-signin2").css("display","block");
+$(".data").css("display","none");
+$(".create").css("display","none");
+});
+}
+</script>
+</body>
+</html>

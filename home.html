@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div style="background-color:black;">
+      <div class="navbar">
+    <a href="home.html">HOME</a>
+    <a href="destination.html">DESTINATION</a>
+    <a href="#aboutus">ABOUT US</a>
+  </div>
+    <h1 style="text-align: center;font-family: Showcard Gothic; color: lightpink;">UNFORGETTABLE HIMACHAL!!</h1>
+    <div class="flex-container">
+    <div class="w3-content w3-section">
+      <img class="myslides" src="shimla.jpg">
+      <img class="myslides" src="hp1.jpg">
+      <img class="myslides" src="hp.jpg">
+      <img class="myslides" src="i1.jpg">
+    </div>
+    </div>
+    <br><br>
+    <div>
+      <img src="him.png" style="float:left; margin-left:20px;width:420px; height:300px; padding-right:10px;">
+      <h1 style="text-align: center;font-family: Showcard Gothic; color: lightpink;">THE BEAUTIFUL STATE</h1>
+      <p style="color:lavender; font-family:Papyrus; font-size:18px;">Himachal Pradesh is a state in the northern part of India. Situated in the Western Himalayas,
+        it is bordered by union territories of Jammu and Kashmir and Ladakh on the north, Punjab state on the west, Haryana state on the southwest,
+        Uttarakhand state on the southeast, and Tibet region on the east. At its southernmost point, it also touches the state of Uttar Pradesh.
+      The predominantly mountainous region comprising the present day Himachal Pradesh has been inhabited since pre-historic times having witnessed
+       multiple waves of human migration from other areas. Through its history, the region was mostly ruled by local kingdoms some of which accepted
+       suzerainty of larger empires. Prior to India's independence from the British, Himachal comprised the hilly regions of Punjab Province of British India. After independence, many of the hilly territories were organized as the Chief Commissioner's province of Himachal Pradesh which later became a union territory. In 1966, hilly areas of neighboring Punjab state were merged into Himachal and it was ultimately granted full statehood in 1971.</p>
+    </div>
+    <br><br>
+    <div id="curr">
+      <br>
+      <img src="curr.jpg" style="height:350px; width:600px; float:right; margin-right:30px;">
+  <h3>CURRENCY CONVERTER</h3>
+  <div class="container">
+    <select id="from" class="postfix">
+      <option value="AUD" >AUD</option>
+      <option value="AZN" >AZN</option>
+      <option value="BHD" >BHD</option>
+      <option value="CAD" >CAD</option>
+      <option value="CHF" >CHF</option>
+      <option value="EUR" >EUR</option>
+      <option value="GBP" >GBP</option>
+      <option value="INR" >INR</option>
+      <option value="JOD" >JOD</option>
+      <option value="KWD" >KWD</option>
+      <option value="KYD" >KYD</option>
+      <option value="OMR" >OMR</option>
+      <option value="USD" selected>USD</option>
+      <option value="UYU" >UYU</option>
+    </select>
+      <input type="text" value="0" name="from_VAL" id="from_VAL" placeholder="Enter amount" />
+      <br><br><br><br>
+      <button id="click" type="button" name="button" onclick="convert()"> Convert!! </button>
+      <br><br><br><br>
+       <select id="to" class="postfix">
+         <option value="AUD" >AUD</option>
+         <option value="AZN" >AZN</option>
+         <option value="BHD" >BHD</option>
+         <option value="CAD" >CAD</option>
+         <option value="CHF" >CHF</option>
+         <option value="EUR" >EUR</option>
+         <option value="GBP" >GBP</option>
+         <option value="INR" selected>INR</option>
+         <option value="JOD" >JOD</option>
+         <option value="KWD" >KWD</option>
+         <option value="KYD" >KYD</option>
+         <option value="OMR" >OMR</option>
+         <option value="USD">USD</option>
+         <option value="UYU" >UYU</option>
+       </select>
+      <input type="text" id="to_VAL" readonly placeholder="get value" value=0 />
+  </div>
+  </div>
+  <br><br>
+  <div id="m">
+<h3>MAP OF HIMACHAL PRADESH</h3>
+<div id="map"></div>
+</div>
+<br><br>
+<div class="footer" id="aboutus">
+<h1 style="text-align: center;font-family: Showcard Gothic; color: lightpink;">OUR TEAM</h1>
+<div class="row">
+  <div class="column">
+      <img src="komal.jpg" style="height:300px;width:70%;">
+      <h4 style="font-family:Tempus Sans ITC; color:lawngreen;">Komal Gupta</h4>
+      <button id="btn"><a href="https://gargk981.github.io/github.io/">Click to see my RESUME</a></button>
+  </div>
+  <div class="column">
+    <img src="kavita.jpg"  style="height:300px; width:70%">
+      <h4 style="font-family:Tempus Sans ITC; color:lawngreen;">Kavita Garg</h4>
+      <button id="btn"><a href="https://gargkavita18.github.io/github.io/">Click to see my RESUME</a></button>
+  </div>
+  <div class="column">
+    <br>
+  <h5 id="info">Contact No:- <br>9888705487, 9780476412</h5>
+  <h5 id="info">E-mail Id:- <br>gargkavita18@gmail.com, gargk981@gmail.com</h5>
+  <br>
+<a id="link" href="https://mail.google.com/mail/u/0/#inbox" class="fa fa-google"></a>
+<a id="link" href="https://www.linkedin.com/in/kavita-797587195/" class="fa fa-linkedin"></a>
+<a id="link" href="https://www.instagram.com/accounts/emailsignup/?hl=en" class="fa fa-instagram"></a>
+<a id="link" href="https://github.com/join" class="fa fa-github"></a>
+</p>
+  </div>
+</div>
+</div>
+</div>
+  <script src="test1.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHXBoYO5j3AvOm0llMEA_QfZ4YVz04iBw&callback=initMap">
+  </script>
+  </body>
+</html>

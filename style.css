@@ -1,0 +1,35 @@
+body{
+  background-image: url('i1.jpg');
+  background-size:cover;
+  overflow: hidden;
+}
+h1{
+  font-family:Curlz MT;
+}
+#m1{
+  margin-top: 30px;
+  margin-left: 25%;
+  height: 70px;
+}
+#m2{
+  margin-left: 35%;
+  height: 10%;
+}
+button{
+  padding: 12px 18px;
+  margin: 14%;
+  color: white;
+  background-color: mediumblue;
+  font-size: 18px;
+  font-family: Footlight MT;
+  border-radius: 8px;
+}
+button:hover{
+  padding: 13px 19px;
+  margin: 14%;
+  color: saddlebrown;
+  background-color: bisque;
+  font-size: 19px;
+  font-family: Bodoni Mt;
+  border-radius: 10px;
+}
