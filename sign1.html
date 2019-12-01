@@ -8,7 +8,7 @@
 <style>
 .g-signin2
 {
-margin-left:550px;
+margin-left:630px;
 margin-top:10px;
 }
 .data
@@ -65,6 +65,7 @@ width:70%;
 <img id="pic" class="img-circle" width="100px" height="100px">
 <p>email address</p>
 <p id="email" class="alert alert-danger"></p>
+  <center><button style="height:40px; width:130px; background-color:white;"><a href="home.html" style="color:black;">Proceed</a></button></center>
 <button onclick="signOut()" class="btn btn-danger">SignOut</button>
 </div>
 <script>
@@ -75,6 +76,7 @@ $(".g-signin2").css("display","none");
 $(".data").css("display","block");
 $("#pic").attr('src',profile.getImageUrl());
 $("#email").text(profile.getEmail());
+$(".create").css("display","none");
 }
 function signOut()
 {
