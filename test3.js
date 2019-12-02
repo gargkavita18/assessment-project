@@ -12,7 +12,7 @@ function carousel(){
   setTimeout(carousel, 2500);
 }
 
-var url='http://api.openweathermap.org/data/2.5/weather?q=Manali,Himachal Pradesh&APPID=12ed32e243cdbfda468de949acdcf094';
+var url='https://api.openweathermap.org/data/2.5/weather?q=Manali,Himachal Pradesh&APPID=12ed32e243cdbfda468de949acdcf094';
 var xhr=new XMLHttpRequest();
 xhr.open('GET',url);
 xhr.onreadystatechange=test
